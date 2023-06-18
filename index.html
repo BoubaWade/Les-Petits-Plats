@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Les petits plats</title>
+</head>
+<body>
+    <header>
+        <img src="./Assets/icons/Vector.svg" alt="">
+        <h1>Les petits plats</h1>
+    </header>
+    <main>
+        <div class="search_principal_container">
+            <input type="text" name="" id="search_principal" placeholder="Rechercher une recette">
+            <img src="./Assets/icons/Vectorsearch.svg" class="vector_search" alt="">
+        </div>
+        <section class="filter_container">
+            <div class="ingredients_container">
+                <div class="ingredients_selected"></div>
+                <div class="ingredients_container">                    
+                    <div class="menu_ingredients">
+                        <p class="tag_menu">Ingrédients</p>
+                        <img src="./Assets/icons/Vectorarrow.svg" alt="" class="arrow_vector">
+                    </div>
+                    <div class="input_ingredient_container">                  
+                        <input type="text" name="" class="input" placeholder="Rechercher un ingrédient">
+                        <img src="./Assets/icons/Vectorarrow.svg" alt="" class="arrow_input_ingredient">
+                    </div>
+                    <ul class="list_ingredients list_items"></ul>
+                </div>
+            </div>
+            <div class="appareils_container">
+                <div class="appareils_selected"></div>
+                <div class="appareils_container">                    
+                    <div class="menu_appareils">
+                        <p class="tag_menu">Appareils</p>
+                        <img src="./Assets/icons/Vectorarrow.svg" alt="" class="arrow_vector">
+                    </div>
+                    <div class="input_appareils_container">
+                        <input type="text" name="" class="input" placeholder="Rechercher un appareil">
+                        <img src="./Assets/icons/Vectorarrow.svg" alt="" class="arrow_input_appareils">
+                    </div>
+                    <ul class="list_appareils list_items"></ul>
+                </div>
+            </div>
+            <div class="utensils_container">
+                <div class="utensils_selected"></div>
+                <div class="utensils_container">                    
+                    <div class="menu_utensils">
+                        <p class="tag_menu">Ustensiles</p>
+                        <img src="./Assets/icons/Vectorarrow.svg" alt="" class="arrow_vector">
+                    </div>
+                    <div class="input_utensils_container">
+                        <input type="text" name="" class="input" placeholder="Rechercher une ustensile">
+                        <img src="./Assets/icons/Vectorarrow.svg" alt="" class="arrow_input_utensils">
+                    </div>
+                    <ul class="list_utensils list_items"></ul>
+                </div>
+            </div>
+        </section>
+        <section class="recipes_container"></section>
+    </main>
+    <script src="./Data/recipes.js"></script>
+    <script src="./index.js" type="module"></script>
+    <script src="./filterFor.js" type="module"></script>
+    <script src="./filterMap.js" type="module"></script>
+    <script src="./filterByTag.js" type="module"></script>
+</body>
+</html>
