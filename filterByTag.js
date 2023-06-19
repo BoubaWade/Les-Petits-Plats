@@ -1,5 +1,4 @@
 import { normalizeLowerCase, filterRecipes } from "./filterFor.js";
-import { normalizeLowerCase, filterRecipes } from "./filterMap.js";
 import {
   displayRecipes,
   getIngredients,
