@@ -199,11 +199,6 @@ arrowVectorIngredients.addEventListener("click", () => {
     utensilsInput.style.display = "none";
     arrowInputUtensils.style.display = "none";
   }
-  // if (window.matchMedia("(max-width: 670px)").matches) {
-  //   arrowInputIngredients.style.transform = "translateX(120px)";
-  //   listIngredients.style.transform = "translateX(120px)";
-  //   ingredientsInput.style.transform = "translateX(120px)";
-  // }
 });
 
 arrowInputIngredients.addEventListener("click", () => {
