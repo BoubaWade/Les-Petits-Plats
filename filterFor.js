@@ -37,7 +37,7 @@ export function filterRecipes(recipes, input) {
 
   const recipesFilteredBySearch = [];
 
-  for (var i = 0; i < recipes.length; i++) {
+  for (let i = 0; i < recipes.length; i++) {
     let recipe = recipes[i];
     let haveInName = normalizeLowerCase(recipe.name).includes(input);
     let haveInAppliance = normalizeLowerCase(recipe.appliance).includes(input);
@@ -46,8 +46,8 @@ export function filterRecipes(recipes, input) {
     );
 
     let haveInIngredient = false;
-    for (var j = 0; j < recipe.ingredients.length; j++) {
-      var ingredient = recipe.ingredients[j].ingredient;
+    for (let j = 0; j < recipe.ingredients.length; j++) {
+      let ingredient = recipe.ingredients[j].ingredient;
       if (normalizeLowerCase(ingredient).includes(input)) {
         haveInIngredient = true;
         break;
@@ -55,8 +55,8 @@ export function filterRecipes(recipes, input) {
     }
 
     let haveInUstensils = false;
-    for (var k = 0; k < recipe.ustensils.length; k++) {
-      var utensil = recipe.ustensils[k];
+    for (let k = 0; k < recipe.ustensils.length; k++) {
+      let utensil = recipe.ustensils[k];
       if (normalizeLowerCase(utensil).includes(input)) {
         haveInUstensils = true;
         break;
